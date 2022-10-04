@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#394a6d">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        ></ImageView>
+
+    <Button
+        android:id="@+id/choose_file"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:background="@drawable/ripple_effect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.75"
+        android:textColor="@color/white"
+        android:text="Choose file"
+        android:textSize="25sp"
+        android:textAlignment="center"></Button>
+
+    <Button
+        android:id="@+id/take_pic"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:background="@drawable/ripple_effect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintVertical_bias="0.75"
+        android:textColor="@color/white"
+        android:text="Take picture"
+        android:textSize="25sp"
+        android:textAlignment="center"></Button>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:background="@drawable/ripple_effect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:textColor="@color/white"
+        android:text="Upload"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center"></Button>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
